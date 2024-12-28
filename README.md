@@ -56,9 +56,9 @@ import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 
 const App = () => {
-  const handleIconChange = (iconKey, svgElement) => {
-    console.log('Selected Icon Key:', iconKey)
-    console.log('Selected Icon SVG Element:', svgElement)
+  const handleIconChange = ({ key, icon }) => {
+    console.log('Selected Icon Key:', key)
+    console.log('Selected Icon SVG Element:', icon)
   }
 
   return (
@@ -76,9 +76,9 @@ import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 
 const App = () => {
-  const handleIconChange = (iconKey, svgElement) => {
-    console.log('Selected Icon Key:', iconKey)
-    console.log('Selected Icon SVG Element:', svgElement)
+  const handleIconChange = ({ key, icon }) => {
+    console.log('Selected Icon Key:', key)
+    console.log('Selected Icon SVG Element:', icon)
   }
 
   return (
