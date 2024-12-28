@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 
-import ReactLucideIconPicker from './component/ReactLucideIconPicker'
+import ReactLucideIconPicker from './components/ReactLucideIconPicker'
 
 export { ReactLucideIconPicker }
 

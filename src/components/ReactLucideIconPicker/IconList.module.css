@@ -1,0 +1,53 @@
+.list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.button {
+  width: 3.8rem;
+  height: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  &.selected,
+  &:hover {
+    background-color: #dfe3e7;
+  }
+}
+
+.icon {
+  transition-duration: 0.2s;
+
+  &.selected {
+    transform: scale(1.15);
+  }
+}
+
+.label {
+  position: absolute;
+  display: none;
+  width: max-content;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  top: calc(100% + 0.5rem);
+  z-index: 2;
+}
+
+.item:hover .label {
+  display: block;
+}

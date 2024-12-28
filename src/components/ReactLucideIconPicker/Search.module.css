@@ -1,0 +1,49 @@
+.search {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.75rem;
+  margin: auto;
+}
+
+.label {
+  height: fit-content;
+  padding: 0.1rem 0.5rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.25rem;
+  margin: auto;
+  font-size: 1rem;
+  color: #79858f;
+  pointer-events: none;
+  background-color: #fff;
+  transition: 0.25s;
+
+  &.hasValue {
+    font-size: 0.75rem;
+    transform: translate(-1.25rem, -1.55rem);
+  }
+}
+
+.input {
+  width: 100%;
+  display: block;
+  padding: 1rem 0.5rem 1rem 2.5rem;
+  border: 1px solid rgba(145, 158, 171, 0.32);
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  color: #212b36;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: rgba(145, 158, 171);
+  }
+}
