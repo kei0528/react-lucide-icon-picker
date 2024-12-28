@@ -15,6 +15,7 @@ npm install react-lucide-icon-picker
 To use the React Lucide Icon Picker, simply import it and use it in your React application:
 
 ```javascript
+import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 You can import components separately from the React Lucide Icon Picker. When doing so, ensure that the components are wrapped inside the `<ReactLucideIconPicker.Provider>` to function correctly.
 
 ```javascript
+import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 import { IconComponent } from 'react-lucide-icon-picker/components'
 
@@ -50,6 +52,7 @@ You can pass the `onChange` prop to either the `ReactLucideIconPicker` or the `R
 ### Example:
 
 ```javascript
+import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 
 const App = () => {
@@ -69,6 +72,7 @@ const App = () => {
 or
 
 ```javascript
+import 'react-lucide-icon-picker/style.css'
 import { ReactLucideIconPicker } from 'react-lucide-icon-picker'
 
 const App = () => {

@@ -1,7 +1,7 @@
 {
   "name": "react-lucide-icon-picker",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
@@ -46,7 +46,6 @@
     "vite-plugin-dts": "4.4.0"
   },
   "dependencies": {
-    "lucide": "^0.469.0",
-    "react-window": "^1.8.11"
+    "lucide": "^0.469.0"
   }
 }
