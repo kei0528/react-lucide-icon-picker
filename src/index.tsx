@@ -1,9 +1,7 @@
-import { createRoot } from 'react-dom/client'
-
 import ReactLucideIconPicker from './components/ReactLucideIconPicker'
 
 export { ReactLucideIconPicker }
 
-const root = document.createElement('div')
-document.body.appendChild(root)
-createRoot(root).render(<ReactLucideIconPicker />)
+// const root = document.createElement('div')
+// document.body.appendChild(root)
+// createRoot(root).render(<ReactLucideIconPicker />)
