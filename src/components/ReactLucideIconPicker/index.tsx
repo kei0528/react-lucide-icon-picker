@@ -1,5 +1,3 @@
-import * as lucide from 'lucide'
-
 import IconList from './IconList'
 import ReactLucideIconPickerProvider from './Provider'
 import s from './ReactLucideIconPicker.module.css'
@@ -10,7 +8,7 @@ const ReactLucideIconPicker = ({
   className,
   id,
 }: {
-  onChange?: (icon: keyof typeof lucide) => void
+  onChange?: (icon: { key: string; icon: SVGElement }) => void
   className?: string
   id?: string
 }) => {
@@ -18,7 +16,7 @@ const ReactLucideIconPicker = ({
     <div className={[s.root, className].join(' ')} id={id}>
       <ReactLucideIconPickerProvider>
         <Search className={s.search} />
-        <IconList onChange={onChange} className={s.list} />
+        <IconList onChange={(icon) => onChange?.(icon)} className={s.list} />
       </ReactLucideIconPickerProvider>
     </div>
   )

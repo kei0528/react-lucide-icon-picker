@@ -9,7 +9,7 @@ const IconList = ({
   onChange,
   className,
 }: {
-  onChange?: (key: keyof typeof lucide, icon: SVGElement) => void
+  onChange?: ({ key, icon }: { key: keyof typeof lucide; icon: SVGElement }) => void
   className?: string
 }) => {
   const { icons, iconSelected, setIconSelected } = useIcons()
@@ -22,7 +22,7 @@ const IconList = ({
             className={[s.button, iconSelected === iconKey ? s.selected : ''].join(' ')}
             onClick={() => {
               setIconSelected(iconKey as keyof typeof lucide)
-              onChange?.(iconKey as keyof typeof lucide, icons[iconKey])
+              onChange?.({ key: iconKey as keyof typeof lucide, icon: icons[iconKey] })
             }}
           >
             <div
