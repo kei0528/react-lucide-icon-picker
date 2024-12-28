@@ -2,6 +2,7 @@
   "name": "react-lucide-icon-picker",
   "private": false,
   "version": "1.0.4",
+  "license": "MIT",
   "type": "module",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
