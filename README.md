@@ -2,6 +2,10 @@
 
 This is a React component that allows you to pick Lucide icons.
 
+## Demo
+
+[https://react-lucide-icon-picker.vercel.app/](https://react-lucide-icon-picker.vercel.app/)
+
 ## Installation
 
 To install the React Lucide Icon Picker, you can use npm or yarn:
